@@ -1,0 +1,13 @@
+import wollok.game.*
+import player.*
+
+
+program PepitaGame {
+	game.title("DemoGame")
+	game.height(10)
+	game.width(10)
+	game.addVisualCharacter(agustin)
+
+
+	game.start()
+}

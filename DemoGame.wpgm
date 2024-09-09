@@ -6,8 +6,22 @@ program PepitaGame {
 	game.title("DemoGame")
 	game.height(10)
 	game.width(10)
+	game.boardGround("fondo.jpg")
 	game.addVisualCharacter(agustin)
+	configurarTeclas.init()
 
 
 	game.start()
+}
+
+object configurarTeclas {
+	
+	method init() {
+	  keyboard.right().onPressDo({
+		agustin.moveteALaDerecha()
+	  })
+	  keyboard.left().onPressDo({
+		agustin.moveteALaIzquierda()
+	  })
+	}
 }

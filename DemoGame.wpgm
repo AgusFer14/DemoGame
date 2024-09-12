@@ -4,10 +4,10 @@ import player.*
 
 program PepitaGame {
 	game.title("DemoGame")
-	game.height(10)
-	game.width(10)
+	game.height(15)
+	game.width(15)
 	game.boardGround("fondo.jpg")
-	game.addVisualCharacter(agustin)
+	game.addVisual(agustin)
 	configurarTeclas.init()
 
 

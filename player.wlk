@@ -2,10 +2,11 @@ import wollok.game.*
 
 
 object agustin {
-    var position = game.at(0, 2)
-    
-    method imagen() = "player.jpg"
-    method position() = position
+    var property position = game.origin()
+
+	method image() {
+		return "player.png"
+	}
 
     method moveteALaDerecha() {
       if(position.x() == game.width() - 1){
